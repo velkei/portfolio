@@ -307,7 +307,7 @@ p {
   background: url(../img/background1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .about-box1 {
@@ -482,6 +482,7 @@ p {
     height: 100vh;
     margin-top: 0;
     padding-top: 2rem;
+    background-attachment: scroll;
   }
 
   .hero-image .hero-text {
@@ -489,15 +490,21 @@ p {
     
   }
   .about-inner {
-    height: 100%;
+    
   }
 
   .about-box1 {
-    height: 100vh;
+    
+    
+  }
+
+  .about-box2 {
+    height: auto;
   }
 
   .kapcsolat-inner {
     height: auto;
+    
   }
 
   .inputstyle {
@@ -506,7 +513,9 @@ p {
 
   .kapcsolat-jobb {
     flex-basis: 50%;
-    padding-left: 1rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
   }
 
   .kapcsolat-bal {
