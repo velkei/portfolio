@@ -458,6 +458,48 @@ p {
     height: 100%;
   }
 
+ 
+}
+
+@media (max-width:400px) {
+
+  .hero-image .hero-text {
+    margin-top: 6rem;
+    
+  }
+  .about-inner {
+    height: 100%;
+  }
+
+  .about-box1 {
+    height: 100vh;
+  }
+
+  .kapcsolat-inner {
+    height: auto;
+  }
+
+  .inputstyle {
+    max-width: 150px;
+  }
+
+  .kapcsolat-jobb {
+    flex-basis: 50%;
+    padding-left: 1rem;
+  }
+
+  .kapcsolat-bal {
+    height: 100vh;
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  #facebook,
+  #github,
+  #linkedin {
+    display: block;
+    padding-bottom: 2px;
+}
 }
 
 /*--------------------------------*/
