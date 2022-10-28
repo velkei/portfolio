@@ -4,45 +4,105 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Rud4n">
+  <title>Portfólió</title>
   <link rel="stylesheet" href="css/styles.css">
-  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Mulish&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-  <header>
-    <h1>velkei rudolf</h1>
-    <h2>html css</h2>
-  </header>
 
-  <div class="container">
-    <section>
-      <h1>This is the main content area of this page</h1>
+  <div class="teszt"></div>
 
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Facere, nobis itaque et esse voluptates ullam. 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Facere, nobis itaque et esse voluptates ullam. 
-      </p>
-      <p>Reiciendis ab vero 
-        quam optio inventore quaerat, perspiciatis a dolores,
-        voluptates, reprehenderit tempore praesentium. Autem.
-      </p>
-    </section>
+<!--   ----------------Navigáció------------------   -->
+
+    <div class="navcontainer">
+      <div class="navigation">
+        <div class="logo"><a target="_blank" href="https://www.facebook.com/rud4n/"><i id="facebook" class="fa-brands fa-facebook"></i></a>
+          <a target="_blank" href="https://github.com/velkei"><i id="github" class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/rudolf-velkei-2a584822b/"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#proof">Proof</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+     </div>
+    </div>
   
-    <aside>
-      <h2>This is the sidebar</h2>
-      <ol>
-        <li>List iten one</li>
-        <li>List iten two</li>
-        <li>List iten three</li>
-        <li>List iten four</li>
-      </ol>
-    </aside>
+
+<!-- -------------Hero image - kezdőlap ------------ -->
+
+  
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Velkei Rudolf</h1>
+        <p>kreatív, alapos, ügyfélbarát webfejlesztő</p>
+        <p>HTML CSS Webdesign</p>
+
+        <div class="spiner"><i id="mailme" class="fa-regular fa-envelope"></i></div>
+<!--        <a href="#" class="hero-btn">keress bátran</a>   -->
+      </div>
+    </div>
+
+<!--  --------------   rólam szekció  ----------------  -->
+
+    <div class="about" id="about">
+      <div class="about-inner">
+        <div class="about-box1"></div>
+        <div class="about-box2">
+          <div class="about-text">
+            <h2>Rólam..</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Provident totam excepturi ducimus voluptatum reiciendis 
+            tenetur tempore optio nostrum nobis molestiae sit 
+            necessitatibus voluptates placeat quae repudiandae
+             illo, esse possimus id!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Provident totam excepturi ducimus voluptatum reiciendis 
+             tenetur tempore optio nostrum nobis molestiae
+           </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- **************Kapcsolat Szekció kezdete************* -->
+    <div class="kapcsolat" id="contact">
+      <div class="kapcsolat-inner">
+        <div class="kapcsolat-bal">
+          <h3>Contact</h3>
+          <h2>Got a problem to solve?</h2>
+          <p>Get your space suit ready and tell me your</p>
+            <p>ideas to develop your dream application.</p><br>
+          <a class="maillink" href="mailto:dobiskola@gmail.com"><i class="fa-regular fa-envelope"></i>dobiskola@gmail.com</a>
+        </div>
+        <div class="kapcsolat-jobb">
+          
+              <p>Név:</p>
+              <label for="nev"><input placeholder="&#xf007" class="inputstyle" type="text" size="32" required></label>
+          
+              <p>Email:</p>  
+              <label for="email"><input placeholder="&#xf0e0" class="inputstyle" type="email" size="32" required></label>
+          
+              <p>Üzenet:</p>
+              <label for="uzenet"></label>
+          <textarea class="inputstyle" name="uzenet" id="uzenet" cols="32" rows="8"></textarea><br>
+          <input class="submitbtn" type="submit" value="Elküld">
+          
+        </div>
+      
+    </div>
   </div>
 
-  <footer>
-    <p>no copyright velkei</p>
-  </footer>
   
 </body>
 </html>
