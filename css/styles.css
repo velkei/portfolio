@@ -463,6 +463,27 @@ p {
 
 @media (max-width:400px) {
 
+  .teszt {
+    display: none;
+  }
+
+  .navcontainer {
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+
   .hero-image .hero-text {
     margin-top: 6rem;
     
@@ -494,12 +515,12 @@ p {
     margin-right: 1rem;
   }
 
-  #facebook,
+/*  #facebook,
   #github,
   #linkedin {
     display: block;
     padding-bottom: 2px;
-}
+}*/
 }
 
 /*--------------------------------*/
