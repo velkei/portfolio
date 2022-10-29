@@ -440,7 +440,7 @@ p {
 
 .kapcsolat-jobb {
   flex: 1 1 50%;
-  
+  background-color: #333;
 }
 
 .kapcsolat-jobb p {
