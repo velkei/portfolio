@@ -299,7 +299,7 @@ p {
 
 /*--------Rőlam szekció-----------*/
 
-.about-inner {
+/*.about-inner {
   height: 100vh;
   display: flex;
   
@@ -307,11 +307,11 @@ p {
   background: url(../img/background1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 .about-box1 {
-  flex-basis: 50%;
+  flex: 1 1 50%;
   
   background: url(../img/kez.jpg);
   background-color: var(--color-kek);
@@ -320,13 +320,44 @@ p {
   background-blend-mode: luminosity;
 }
 
+.about-box1 img {
+  display: block;
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .about-box2 {
-  flex-basis: 50%;
+  flex: 1 1 50%;
   display: flex;
   justify-content: center;
   align-items: left;
   
+}*/
+
+/*--------------------------------*/
+.about-inner {
+  
+  display: flex;
+  
 }
+
+.about-box1 {
+  flex: 1 1 50%;
+}
+
+.about-box1 img {
+  display: block;
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.about-box2 {
+  flex: 1 1 50%;
+}
+
+/*----------------------------------*/
 
 .about-text {
   display: flex;
@@ -441,11 +472,21 @@ p {
 
   .about-inner {
     flex-direction: column;
-    
+    flex-wrap: wrap;
   }
 
   .about-box1 {
     height: 100%;
+    flex: 1;
+  }
+
+  .about-box2 {
+    height: 100%;
+    flex: 1;
+  }
+
+  .about-box1 img {
+    width: 100%;
   }
 
   .about-text {
@@ -458,78 +499,6 @@ p {
     height: 100%;
   }
 
- 
-}
-
-@media (max-width:400px) {
-
-  .teszt {
-    display: none;
-  }
-
-  .navcontainer {
-    position: fixed;
-    top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .navigation {
-    flex-direction: column;
-  }
-
-  .hero-image {
-    height: 100vh;
-    margin-top: 0;
-    padding-top: 2rem;
-    background-attachment: scroll;
-  }
-
-  .hero-image .hero-text {
-    margin-top: 6rem;
-    
-  }
-  .about-inner {
-    
-  }
-
-  .about-box1 {
-    
-    
-  }
-
-  .about-box2 {
-    height: auto;
-  }
-
-  .kapcsolat-inner {
-    height: auto;
-    
-  }
-
-  .inputstyle {
-    max-width: 150px;
-  }
-
-  .kapcsolat-jobb {
-    flex-basis: 50%;
-    margin: 0;
-    padding: 0;
-    margin-top: 2rem;
-  }
-
-  .kapcsolat-bal {
-    height: 100vh;
-    margin-top: 2rem;
-    margin-right: 1rem;
-  }
-
-/*  #facebook,
-  #github,
-  #linkedin {
-    display: block;
-    padding-bottom: 2px;
-}*/
 }
 
 /*--------------------------------*/
