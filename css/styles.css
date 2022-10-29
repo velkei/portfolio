@@ -119,17 +119,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------*/
      /*-----     navigáció     -----*/ 
     
@@ -161,13 +150,13 @@ p {
   display: inline-block;
   text-decoration: none;
   font-size: 1.2rem;
-  color: var(--color-pink);
+  color: var(--color-feher);
   margin-left: 10px;
 }
 
 
 .navbar a:hover {
-  color: var(--color-feher);
+  color: var(--color-pink);
 }
 
 /* ********Szósöl ikonok vazz*********   */
@@ -182,15 +171,15 @@ p {
 }
 
 #facebook:hover {
-  color: #4267B2;
+  color: var(--color-pink);
 }
 
 #linkedin:hover {
-  color: #4267B2;
+  color: var(--color-pink);
 }
 
 #github:hover {
-  color: #4267B2;
+  color: var(--color-pink);
 }
 
 .logo {
@@ -217,7 +206,8 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 90px);
+  /*height: calc(100vh - 90px);*/
+  height: 100vh;
 
   display: flex;
   justify-content: flex-start;
@@ -344,6 +334,7 @@ p {
 
 .about-box1 {
   flex: 1 1 50%;
+  
 }
 
 .about-box1 img {
@@ -351,6 +342,8 @@ p {
   width: 50vw;
   height: 100vh;
   object-fit: cover;
+
+  
 }
 
 .about-box2 {
@@ -424,11 +417,13 @@ p {
 .kapcsolat-bal h2 {
   color: #fff;
   font-size: 3.2rem;
+  padding-bottom: 2rem;
 }
 
 .kapcsolat-bal h3 {
   color: #fff;
   font-size: 1.6rem;
+  padding-bottom: 2rem;
 }
 
 .kapcsolat-bal p {
@@ -443,14 +438,46 @@ p {
 
 .kapcsolat-jobb {
   flex-basis: 50%;
-  padding-left: 4rem;
+  
+}
+
+.kapcsolat-jobb p {
+  color: var(--color-pink);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  font-weight: bold;
 }
 
 
 .inputstyle {
-  font-family: 'Font Awesome 6 Free', 'Mulish', sans-serif;
-  font-weight: bold;
-  max-width: 40ch;
+  
+  display: block;
+
+  margin-bottom: 18px;
+  border-radius: 5px;
+
+  font-size: 1em;
+  color: #fff;
+
+  width: 70%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  
+}
+
+.submitbtn {
+  padding: 6px 20px;
+  background-color: var(--color-pink);
+  border: 1px solid var(--color-kek2);
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.fa-envelope {
+  padding-right: 10px;
 }
 
 /*--------------------------------*/
@@ -522,7 +549,11 @@ p {
   }
 
   .inputstyle {
-    max-width: 40ch;
+    
+
+    
+    
+    width: fit-content;
   }
 
 }
