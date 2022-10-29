@@ -418,7 +418,7 @@ p {
 
 .kapcsolat-bal h2 {
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 4vw;
   padding-bottom: 2rem;
 }
 
@@ -552,6 +552,10 @@ p {
 
   .kapcsolat-jobb {
     background-color: #333;
+  }
+
+  .kapcsolat-bal h2 {
+    font-size: 10vw;
   }
 
   .kapcsolat-bal {
