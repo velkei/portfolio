@@ -355,6 +355,12 @@ p {
 
 .about-box2 {
   flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--color-pink);
+  
 }
 
 /*----------------------------------*/
@@ -364,11 +370,12 @@ p {
   justify-content: center;
   align-items: left;
   flex-direction: column;
+  
 
-  padding-left: 3rem;
-  padding-right: 3rem;
+  /*padding-left: 3rem;
+  padding-right: 3rem;*/
 
-  max-width: 100ch;
+  max-width: 60ch;
 }
 
 .about-text h2 {
@@ -443,11 +450,24 @@ p {
 .inputstyle {
   font-family: 'Font Awesome 6 Free', 'Mulish', sans-serif;
   font-weight: bold;
+  max-width: 40ch;
 }
 
 /*--------------------------------*/
 
 @media (max-width:700px) {
+
+  .teszt {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 6px;
+  }
+
   .hero-image {
     justify-content: center;
   }
@@ -492,11 +512,17 @@ p {
   .about-text {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .kapcsolat-inner {
     flex-direction: column;
     height: 100%;
+  }
+
+  .inputstyle {
+    max-width: 40ch;
   }
 
 }
