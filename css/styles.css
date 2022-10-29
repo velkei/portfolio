@@ -548,8 +548,12 @@ p {
     height: auto;
   }
 
-  .kapcsolat-bal {
+  .kapcsolat-jobb {
+    background-color: #333;
+  }
 
+  .kapcsolat-bal {
+    margin-top: 1rem;
   }
 
   .inputstyle {
