@@ -547,7 +547,7 @@ p {
 
   .kapcsolat-inner {
     flex-direction: column;
-    height: auto;
+    height: 100%;
   }
 
   .kapcsolat-jobb {
