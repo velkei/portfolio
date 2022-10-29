@@ -406,7 +406,7 @@ p {
   height: 100vh;
   padding-left: 4rem;
 
-  flex-basis: 50%;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -437,7 +437,7 @@ p {
 }
 
 .kapcsolat-jobb {
-  flex-basis: 50%;
+  flex: 1 1 50%;
   
 }
 
@@ -546,6 +546,10 @@ p {
   .kapcsolat-inner {
     flex-direction: column;
     height: auto;
+  }
+
+  .kapcsolat-bal {
+
   }
 
   .inputstyle {
